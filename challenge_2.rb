@@ -31,9 +31,10 @@ principal_amount = 200000.0
 #     Line 1 of this file.
 
 # ==============================================================
-# Your code goes here.
-# You shouldn't have to write code or change code anywhere else.
+loan_quotes.each do|item|
+	puts "The monthly payment from #{item["bank"]} will be #{'%.2f' % pmt(item["annual_rate"], number_of_monthly_payments, principal_amount)}"
 
+end
 # loan_quotes.each ...
 
 # ==============================================================
