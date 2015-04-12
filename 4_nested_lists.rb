@@ -1,7 +1,7 @@
 # Nested Arrays and Hashes
 
-rb = { "first_name" => "Raghu",     "last_name" => "Betina" }
-av = { "first_name" => "Arjun",     "last_name" => "Venkataswamy" }
+rb = { "first_name" => "Raghu",     "last_name" => "Betina" , }
+av = { "first_name" => "Arjun",     "last_name" => "Venkataswamy", "role" => "teacher"}
 dy = { "first_name" => "Dan",       "last_name" => "Yu" }
 gn = { "first_name" => "Genevieve", "last_name" => "Nielsen" }
 an = { "first_name" => "Alex",      "last_name" => "Niemczewski" }
