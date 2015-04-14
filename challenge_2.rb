@@ -14,7 +14,7 @@ require './challenge_1.rb'
 loan_quotes = [
   { "bank" => "Elm Street Bank", "annual_rate" => 0.03875},
   { "bank" => "Oak Street Bank", "annual_rate" => 0.04076},
-  { "bank" => "Ash Street Bank", "annual_rate" => 0.04000}
+  { "bank" => "Ash Street Bank", "annual_rate" => 0.04000},
 ]
 
 # Given some parameters of the loan, perhaps entered by a user on a web form:
@@ -32,7 +32,7 @@ principal_amount = 200000.0
 
 # ==============================================================
 loan_quotes.each do|item|
-	puts "The monthly payment from #{item["bank"]} will be #{'%.2f' % pmt(item["annual_rate"], number_of_monthly_payments, principal_amount)}"
+	puts "The monthly payment from #{item["bank"]} will be #{'%.2f' % pmt(item["annual_rate"]/12, number_of_monthly_payments, principal_amount)}"
 
 end
 # loan_quotes.each ...
